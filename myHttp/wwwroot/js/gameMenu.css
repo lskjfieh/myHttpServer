@@ -1,0 +1,19 @@
+body {
+    background-color: #F0F8FF;
+  }
+
+.h1{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.mario{
+    margin-left: 40px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.gobang{
+    margin-left: 40px;
+    margin-top: 10px;
+    display: inline-block;
+}

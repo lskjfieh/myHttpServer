@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线博客系统登录</title>
+    <style type="text/css">
+    *body{
+        background-color: #baabab;
+        margin: 0 auto;
+    }
+    .login-box{
+        background-color: aliceblue;
+        margin-top: 100px;
+        margin-left: 150px;
+        margin-right: 150px;
+        border: 3px solid rgb(198, 202, 222);
+        padding: 10px;
+        width: 70%;
+        height: 50%;
+        text-align: center;
+
+    }
+    .titletext{
+        text-emphasis-color: rgba(0, 0, 0, 0.51);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="titletext">
+            <h1>账户登录</h1>
+        </div>
+        <form action="/mysql_find_cgi" method="post">
+            <br>
+            <div>
+                用户名: <input type="text" name="name">
+                <br />
+                密 码: <input type="password" name="password">
+            </div>
+            <br />
+            <div>
+                <div class="button1">
+                    <input type="submit" value="登录" />
+                </div>
+
+                <div class="button2">
+                    <input type="button" onclick="window.location.href = 'blogRegister.html'" value="注册" />
+                    <br>
+                    <input type="button" onclick="window.location.href = 'index.html'" value="返回主页面" />
+                </div>
+            </div>
+        </form>
+
+        <!-- <p>如果您点击提交，表单数据会提交给 mysql_find_cgi进行后台数据处理。</p> -->
+    </div>
+</body>
+
+</html>
